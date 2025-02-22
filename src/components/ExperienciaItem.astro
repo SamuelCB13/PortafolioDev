@@ -1,0 +1,60 @@
+---
+import EyeIcon from "./icons/Eye.astro";
+const { id, title, image, description, date, cargo, privacy, link } =
+    Astro.props;
+---
+
+<li>
+    <div
+        class="block py-4 sm:py-5 px-4 sm:px-7 rounded-lg transition-all duration-200 ease-in-out"
+    >
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <!-- Logo -->
+            <img
+                class="w-16 h-16 sm:w-24 sm:h-24 rounded-full mx-auto sm:mx-0"
+                src={image}
+                alt={`Logo de ${title}`}
+            />
+            <!-- Contenido -->
+            <div class="w-full">
+                <div
+                    class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:mb-2"
+                >
+                    <h3
+                        class="text-xl sm:text-2xl font-bold text-[#c74343] text-center sm:text-left"
+                    >
+                        {title}
+                    </h3>
+                    <p
+                        class="flex items-center justify-center sm:justify-start gap-2 text-sm text-white max-sm:hidden"
+                    >
+                        <EyeIcon class="w-4 h-4" />
+                        {privacy}
+                    </p>
+                </div>
+                <p
+                    class="text-base sm:text-lg text-white text-center sm:text-left max-sm:mt-2"
+                >
+                    {id}. {cargo}
+                </p>
+                <p
+                    class="text-base sm:text-lg mt-2 mb-3 sm:mb-4 text-white opacity-50 sm:text-left max-sm:text-pretty"
+                >
+                    {description}
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0"
+                >
+                    <span class="text-sm text-white">{date}</span>
+                    <a
+                        href={link}
+                        target="_blank"
+                        class="text-sm text-white bg-[#c74343] py-1 px-3 rounded-full hover:bg-[#a33232] hover:border-white border-[#c74343] border-2 hover:bg-transparent transition-all duration-300 ease-in-out w-full sm:w-auto text-center"
+                    >
+                        Ver empresa ➜
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

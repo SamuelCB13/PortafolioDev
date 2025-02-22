@@ -1,0 +1,65 @@
+---
+import ExperienceItem from "../components/ExperienciaItem.astro";
+const EXPERIENCE = [
+    {
+        id: 2,
+        title: "BPO Global Services",
+        image: "/logo-bpo.png",
+        description:
+            "Responsable de las páginas, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la manutención de los softwares y mejora de un 70% en el diseño de los aplicativos.",
+        date: "Julio 2024, Actualidad",
+        cargo: "Desarrollador Junior",
+        privacy: "Privado",
+        link: "https://www.bpogs.com",
+    },
+    {
+        id: 1,
+        title: "BPO Global Services",
+        image: "/logo-bpo.png",
+        description:
+            "Encargado de la creación del frontend de los aplicativos web. Mejora de un 20% en la velocidad de carga de las páginas y mejora de un 40% en la experiencia de usuario.",
+        date: "Enero 2024,  Julio 2024",
+        cargo: "Practicante de Desarrollo",
+        privacy: "Privado",
+        link: "https://www.bpogs.com",
+    },
+];
+---
+
+<main class="flex items-center justify-center pt-8 sm:pt-16" id="experiencia">
+    <div
+        class="relative w-full h-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-8"
+    >
+        <!-- Texto de fondo -->
+        <h1
+            class="absolute -top-4 sm:top-14 text-6xl sm:text-8xl md:text-[12rem] lg:text-[15rem] font-extrabold text-gray-200 uppercase opacity-[0.07] select-none text-center w-full"
+        >
+            Experiencia
+        </h1>
+        <!-- Contenido principal -->
+        <div
+            class="p-4 sm:p-5 z-10 w-full md:w-3/4 lg:w-auto xl:w-2/4 mt-8 sm:mt-24 md:mt-32 lg:mt-[9rem]"
+        >
+            <ol class="space-y-4 sm:space-y-6">
+                {
+                    EXPERIENCE.map((experience) => (
+                        <li>
+                            <ExperienceItem {...experience} />
+                        </li>
+                    ))
+                }
+            </ol>
+        </div>
+    </div>
+</main>
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Fjalla One", sans-serif;
+    }
+</style>

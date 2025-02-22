@@ -1,0 +1,176 @@
+---
+import WhatsappIcon from "./icons/Whatsapp.astro";
+import LinkedinIcon from "./icons/Linkedin.astro";
+import GmailIcon from "./icons/Gmail.astro";
+import GithubIcon from "./icons/Github.astro";
+import ClockIcon from "./icons/Clock.astro";
+import MessageIcon from "./icons/Message.astro";
+import SendIcon from "./icons/Send.astro";
+import FormIcon from "./icons/Form.astro";
+---
+
+<main
+    class="flex items-center justify-center lg:min-h-screen pt-16 sm:pt-16"
+    id="contacto"
+>
+    <div
+        class="relative w-full h-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-8"
+    >
+        <!-- Texto de fondo -->
+        <h1
+            class="absolute -top-4 sm:top-0 text-6xl sm:text-8xl md:text-[12rem] lg:text-[15rem] font-extrabold text-gray-200 uppercase opacity-[0.07] select-none text-center w-full"
+        >
+            Contacto
+        </h1>
+
+        <!-- Contenido principal -->
+        <div
+            class="relative flex flex-col md:flex-row items-center justify-center max-w-5xl gap-8 md:gap-10 mt-16 sm:mt-24 md:mt-32 lg:mt-[10rem] w-full"
+        >
+            <!-- Formulario -->
+            <section
+                class="w-full bg-zinc-950 border border-zinc-800 p-6 md:p-8 rounded-lg"
+            >
+                <h2
+                    class="text-2xl md:text-[30px] text-[#c74343] flex items-center gap-2"
+                >
+                    <FormIcon class="size-6" />
+                    Información de contacto
+                </h2>
+                <p class="text-white mt-2">
+                    Completa el formulario y me comunicaré contigo lo antes
+                    posible.
+                </p>
+                <form
+                    action="https://formspree.io/f/mkgoekgv"
+                    method="POST"
+                    class="flex flex-col items-center gap-4 my-5"
+                >
+                    <input
+                        type="text"
+                        name="nombre"
+                        autocomplete="off"
+                        placeholder="Nombre Completo"
+                        class="w-full py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg outline-none focus:border-[#c74343] text-white focus:bg-transparent transition duration-200"
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        autocomplete="off"
+                        placeholder="Correo Electrónico"
+                        class="w-full py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg outline-none focus:border-[#c74343] text-white focus:bg-transparent transition duration-200"
+                    />
+                    <textarea
+                        name="mensaje"
+                        placeholder="Escribe tu mensaje..."
+                        class="w-full max-h-44 min-h-44 py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg h-44 outline-none focus:border-[#c74343] text-white focus:bg-transparent transition duration-200"
+                    ></textarea>
+                    <button
+                        type="submit"
+                        class="w-full p-3 bg-[#c74343] text-white rounded-md flex items-center justify-center gap-2 hover:bg-transparent border border-[#c74343] hover:border-white transition duration-200"
+                    >
+                        <SendIcon class="size-6" />
+                        Enviar mensaje
+                    </button>
+                </form>
+            </section>
+
+            <!-- Información de contacto -->
+            <section class="w-full px-4 md:px-8">
+                <div>
+                    <h2
+                        class="text-2xl md:text-[30px] text-white flex items-center gap-2 max-sm:justify-center"
+                    >
+                        <MessageIcon class="size-6" />
+                        ¿Deseas contactarme?
+                    </h2>
+                    <p class="text-gray-400 mt-2 max-sm:text-pretty">
+                        Si deseas contactarme, puedes hacerlo a través de mis
+                        redes sociales o enviándome un correo electrónico. Estoy
+                        siempre disponible para nuevas oportunidades y
+                        colaboraciones. ❤️
+                    </p>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="my-6 md:my-10">
+                    <h3
+                        class="text-xl md:text-[22px] text-white max-sm:text-center"
+                    >
+                        Redes Sociales
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                        <a
+                            href="https://wa.me/573147709706"
+                            target="_blank"
+                            class="flex items-center gap-2 px-4 py-3 bg-[#032003] border border-green-900 rounded-md w-full hover:bg-green-900 transition duration-200"
+                        >
+                            <WhatsappIcon class="size-6 text-[#00ff00]" />
+                            <span class="text-[#00ff00] font-semibold"
+                                >WhatsApp</span
+                            >
+                        </a>
+                        <a
+                            href="https://wa.me/573147709706"
+                            target="_blank"
+                            class="flex items-center gap-2 px-4 py-3 bg-[#030320] border border-blue-950 rounded-md w-full hover:bg-blue-950 transition duration-200"
+                        >
+                            <LinkedinIcon class="size-6 text-[#0099ff]" />
+                            <span class="text-[#0099ff] font-semibold"
+                                >LinkedIn</span
+                            >
+                        </a>
+                        <a
+                            href="https://wa.me/573204000000"
+                            target="_blank"
+                            class="flex items-center gap-2 px-4 py-3 bg-zinc-950 border border-zinc-700 rounded-md w-full hover:bg-zinc-700 transition duration-200"
+                        >
+                            <GithubIcon class="size-6 text-white" />
+                            <span class="text-white font-semibold">GitHub</span>
+                        </a>
+                        <a
+                            href="mailto:casato311409@gmail.com"
+                            target="_blank"
+                            class="flex items-center gap-2 px-4 py-3 bg-[#220404] border border-red-950 rounded-md w-full hover:bg-red-950 transition duration-200"
+                        >
+                            <GmailIcon class="size-6 text-[#ff0000]" />
+                            <span class="text-[#ff0000] font-semibold"
+                                >Email</span
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Disponibilidad -->
+                <div
+                    class="w-full bg-zinc-950 border border-zinc-800 p-6 rounded-lg"
+                >
+                    <h2
+                        class="text-xl md:text-[22px] text-white mb-4 flex items-center gap-2 max-sm:justify-center"
+                    >
+                        <ClockIcon class="size-6" />
+                        Disponibilidad
+                    </h2>
+                    <p class="text-gray-400">Lunes a Viernes</p>
+                    <p
+                        class="text-white font-semibold my-2 text-lg md:text-[18px]"
+                    >
+                        9:00 AM - 5:00 PM
+                    </p>
+                    <p class="text-gray-400">(GMT-5) Hora de Colombia</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Fjalla One", sans-serif;
+    }
+</style>

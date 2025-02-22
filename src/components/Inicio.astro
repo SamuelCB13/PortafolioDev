@@ -1,0 +1,98 @@
+---
+import LinkedinIcon from "./icons/Linkedin.astro";
+import GmailIcon from "./icons/Gmail.astro";
+import DownloadIcon from "./icons/Download.astro";
+---
+
+<main
+    class="flex items-center justify-center min-h-screen pt-16 px-4 sm:px-6 md:px-8"
+    id="inicio"
+>
+    <div
+        class="relative w-full h-full flex flex-col items-center justify-center"
+    >
+        <!-- Texto de fondo -->
+        <h1
+            class="absolute bottom-3/4 text-6xl sm:text-8xl md:text-[12rem] lg:text-[15rem] font-extrabold text-gray-200 uppercase opacity-[0.07] select-none text-center w-full"
+        >
+            Bienvenido
+        </h1>
+        <!-- Contenido principal -->
+        <div class="relative text-center z-10">
+            <p
+                class="text-2xl sm:text-3xl md:text-4xl font-light text-gray-500"
+            >
+                Yo soy
+            </p>
+            <!-- Contenedor para la imagen y el texto de SamuelC -->
+            <div
+                class="flex flex-col md:flex-row items-center justify-center md:space-x-10 space-y-4 md:space-y-0"
+            >
+                <img
+                    src="/samuelc.jpg"
+                    alt="Samuel Carvajal"
+                    class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full"
+                />
+                <h1
+                    class="text-[#c74343] text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-extrabold leading-tight"
+                >
+                    SamuelC
+                </h1>
+            </div>
+            <!-- Texto adicional -->
+            <div>
+                <p class="text-lg sm:text-xl text-gray-500 mt-4">
+                    Pero mi nombre real es Samuel Carvajal Bedoya. 👋🏼
+                </p>
+            </div>
+            <!-- Texto adicional -->
+            <div class="mt-6 md:mt-10">
+                <p
+                    class="text-lg sm:text-xl text-white w-full md:w-[75%] lg:w-[55%] mx-auto"
+                >
+                    Desarrollador web con <strong class="text-[#c74343]"
+                        >+1 año de experiencia</strong
+                    > nacido en Medellín, Colombia. Enfocado en el desarrollo de
+                    aplicaciones únicas. 🖥️
+                </p>
+            </div>
+            <!-- Botones -->
+            <div
+                class="mt-8 md:mt-12 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6"
+            >
+                <a
+                    href="/Hoja de Vida - Samuel Carvajal.pdf"
+                    download
+                    class="px-4 sm:px-6 py-3 font-semibold rounded-full shadow-md text-white border-2 bg-[#c74343] border-[#c74343] hover:bg-transparent hover:border-white flex items-center justify-center gap-2 transition-all duration-300 ease-in-out"
+                >
+                    <DownloadIcon class="w-5 h-5 sm:w-6 sm:h-6" />Descargar CV
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/samuelcb13/"
+                    target="_blank"
+                    class="px-4 sm:px-6 py-3 font-semibold rounded-full shadow-md text-black border-2 bg-gray-400 border-gray-400 hover:text-black hover:bg-white hover:border-white flex items-center justify-center gap-2 transition-all duration-300 ease-in-out"
+                >
+                    <LinkedinIcon class="w-5 h-5 sm:w-6 sm:h-6" /> LinkedIn
+                </a>
+                <a
+                    href="mailto:casato311409@gmail.com"
+                    target="_blank"
+                    class="px-4 sm:px-6 py-3 font-semibold rounded-full shadow-md text-white border-2 bg-transparent border-white hover:text-black hover:bg-white hover:border-white flex items-center justify-center gap-2 transition-all duration-300 ease-in-out"
+                >
+                    <GmailIcon class="w-5 h-5 sm:w-6 sm:h-6" />
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Fjalla One", sans-serif;
+    }
+</style>

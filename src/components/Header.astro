@@ -1,0 +1,105 @@
+---
+import "@fontsource/fjalla-one";
+---
+
+<header
+    class="fixed z-50 w-full h-16 flex justify-evenly max-sm:justify-between items-center px-6 text-lg bg-transparent transition-all duration-300"
+    id="header"
+>
+    <!-- Logo -->
+    <section class="text-white">
+        <a
+            href="/"
+            class="hover:text-[#c74343] transition-all duration-200 ease-in-out"
+        >
+            &lt;/&gt; SamuelC
+        </a>
+    </section>
+
+    <!-- Menú hamburguesa en móviles -->
+    <button id="menu-btn" class="sm:hidden text-white focus:outline-none">
+        ☰
+    </button>
+
+    <!-- Navegación -->
+    <nav
+        id="nav-menu"
+        class="hidden sm:flex gap-4 text-white absolute sm:static top-16 left-0 w-full sm:w-auto bg-black sm:bg-transparent sm:p-0 transition-all duration-300 justify-center text-center"
+    >
+        <a
+            href="#inicio"
+            class="hover:text-[#c74343] transition-all duration-200 ease-in-out px-[1px]"
+            >Inicio</a
+        >
+        <a
+            href="#experiencia"
+            class="hover:text-[#c74343] transition-all duration-200 ease-in-out px-[1px]"
+            >Experiencia</a
+        >
+        <a
+            href="#proyectos"
+            class="hover:text-[#c74343] transition-all duration-200 ease-in-out px-[1px]"
+            >Proyectos</a
+        >
+        <a
+            href="#sobre-mi"
+            class="hover:text-[#c74343] transition-all duration-200 ease-in-out px-[1px]"
+            >Sobre mí</a
+        >
+        <a
+            href="#contacto"
+            class="hover:text-[#c74343] transition-all duration-200 ease-in-out px-[1px]"
+            >Contacto</a
+        >
+    </nav>
+</header>
+
+<style>
+    a {
+        font-family: "Fjalla One", sans-serif;
+    }
+
+    header {
+        backdrop-filter: blur(0px);
+    }
+
+    header.scrolled {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo con transparencia */
+    }
+
+    .active {
+        color: #c74343;
+    }
+</style>
+
+<script>
+    // Efecto de scroll en header
+    window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        if (window.scrollY > 50) {
+            header?.classList.add("scrolled");
+        } else {
+            header?.classList.remove("scrolled");
+        }
+    });
+
+    // Toggle menú en móviles
+    document.getElementById("menu-btn")?.addEventListener("click", () => {
+        document.getElementById("nav-menu")?.classList.toggle("hidden");
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+
+        links.forEach((link) => {
+            link.addEventListener("click", function () {
+                // Remueve la clase 'active' de todos los enlaces
+                links.forEach((l) => l.classList.remove("active"));
+
+                // Agrega la clase 'active' al enlace seleccionado
+                this.classList.add("active");
+            });
+        });
+    });
+</script>
