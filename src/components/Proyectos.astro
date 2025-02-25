@@ -41,18 +41,10 @@ const PROJECTS = [
         title: "Portafolio Dev - Desarrollador de Software",
         description:
             "Landing page personal con información sobre mi experiencia, proyectos, habilidades y un poco acerca de mí y mi vida laboral. Creada con Astro y Tailwind CSS.",
-        link: "https://svgl.vercel.app/",
-        github: "https://github.com/pheralb/svgl",
+        link: "https://samuelc-one.vercel.app/",
+        github: "https://github.com/SamuelCB13/PortafolioDev",
         image: "/proyecto1.webp",
         tags: [TAGS.ASTRO, TAGS.TAILWIND],
-    },
-    {
-        title: "Tipificador para Ventas de Telefonía / Móviles",
-        description:
-            "Plataforma web para guardar información de ofertas de planes móviles y teléfonía, realiazadas a clientes específicos. Creada con Angular, Nodejs y SQL.",
-        link: "https://adventjs.dev",
-        image: "/proyecto2.webp",
-        tags: [TAGS.ANGULAR, TAGS.NODEJS, TAGS.SQL],
     },
 ];
 ---
@@ -148,5 +140,14 @@ const PROJECTS = [
     h5,
     h6 {
         font-family: "Fjalla One", sans-serif;
+    }
+
+    main {
+        animation: slideUp .5s ease-out;
+    }
+
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 </style>

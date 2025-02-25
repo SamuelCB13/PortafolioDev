@@ -13,7 +13,7 @@ import DownloadIcon from "./icons/Download.astro";
     >
         <!-- Texto de fondo -->
         <h1
-            class="absolute bottom-3/4 text-6xl sm:text-8xl md:text-[12rem] lg:text-[15rem] font-extrabold text-gray-200 uppercase opacity-[0.07] select-none text-center w-full"
+            class="absolute bottom-3/4 max-sm:bottom-[95%] text-6xl sm:text-8xl md:text-[12rem] lg:text-[15rem] font-extrabold text-gray-200 uppercase opacity-[0.07] select-none text-center w-full"
         >
             Bienvenido
         </h1>
@@ -94,5 +94,14 @@ import DownloadIcon from "./icons/Download.astro";
     h5,
     h6 {
         font-family: "Fjalla One", sans-serif;
+    }
+
+    main {
+        animation: slideUp 1s ease-out;
+    }
+
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 </style>

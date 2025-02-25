@@ -173,4 +173,13 @@ import FormIcon from "./icons/Form.astro";
     h6 {
         font-family: "Fjalla One", sans-serif;
     }
+
+    main {
+        animation: slideUp .5s ease-out;
+    }
+
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 </style>
