@@ -1,5 +1,4 @@
 ---
-import GitHub from "./icons/Github.astro";
 import Angular from "./icons/Angular.astro";
 import AstroIcon from "./icons/AstroI.astro";
 import Tailwind from "./icons/TailwindCss.astro";
@@ -7,12 +6,24 @@ import Nodejs from "./icons/Nodejs.astro";
 import Sql from "./icons/Sql.astro";
 import Github from "./icons/Github.astro";
 import ViewProject from "./icons/ViewProject.astro";
+import Nextjs from "./icons/Nextjs.astro";
+import Nextauth from "./icons/Nextauth.astro";
 
 const TAGS = {
     ANGULAR: {
         name: "Angular",
         class: "border border-[#d13438] text-white",
         icon: Angular,
+    },
+    NEXTJS: {
+        name: "NextJs",
+        class: "border border-white text-white",
+        icon: Nextjs,
+    },
+    NEXTAUTH: {
+        name: "NextAuth",
+        class: "border border-purple-500 text-white",
+        icon: Nextauth,
     },
     ASTRO: {
         name: "Astro",
@@ -47,13 +58,22 @@ const PROJECTS = [
         tags: [TAGS.ASTRO, TAGS.TAILWIND],
     },
     {
-        title: "Sanación Angelical - Angeóloga y Terapeuta Emocional con +5 Años de Experiencia",
+        title: "Sanación Angelical - Angeóloga y Terapeuta Emocional con +15 Años de Experiencia",
         description:
             "Landing page para cliente con información sobre lo que hace, los servicios que ofrece, información sobre la angeóloga, testimonios de clientes y diferentes formas de contacto. Creada con Astro y Tailwind CSS.",
         link: "https://sanacion-angelical.vercel.app/",
         github: "https://github.com/SamuelCB13/SanacionAngelical.git",
         image: "/proyecto2.webp",
         tags: [TAGS.ASTRO, TAGS.TAILWIND],
+    },
+    {
+        title: "Intranet Corporativa | Red social para empleados activos en la empresa.",
+        description:
+            "Intranet Corporativa para mantener al tanto de todo a los empleados activos de la empresa con una red social interna. Creada con Nextjs y Tailwind CSS.",
+        // link: "https://sanacion-angelical.vercel.app/",
+        github: "https://github.com/SamuelCB13/IntranetCorporativa.git",
+        image: "/proyecto3.webp",
+        tags: [TAGS.NEXTJS, TAGS.NEXTAUTH, TAGS.TAILWIND],
     },
 ];
 ---
@@ -152,11 +172,17 @@ const PROJECTS = [
     }
 
     main {
-        animation: slideUp .5s ease-out;
+        animation: slideUp 0.5s ease-out;
     }
 
     @keyframes slideUp {
-        from { opacity: 0; transform: translateY(40px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 </style>
