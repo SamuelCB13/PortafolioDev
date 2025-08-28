@@ -8,6 +8,7 @@ import Github from "./icons/Github.astro";
 import ViewProject from "./icons/ViewProject.astro";
 import Nextjs from "./icons/Nextjs.astro";
 import Nextauth from "./icons/Nextauth.astro";
+import Toast from "./icons/Toast.astro";
 
 const TAGS = {
     ANGULAR: {
@@ -45,6 +46,11 @@ const TAGS = {
         class: "border border-[#2298BD] text-white",
         icon: Sql,
     },
+    TOAST: {
+        name: "Toast",
+        class: "border border-white text-white",
+        icon: Toast,
+    },
 };
 
 const PROJECTS = [
@@ -73,6 +79,15 @@ const PROJECTS = [
         github: "https://github.com/SamuelCB13/IntranetCorporativa.git",
         image: "/proyecto3.webp",
         tags: [TAGS.NEXTJS, TAGS.NEXTAUTH, TAGS.TAILWIND],
+    },
+    {
+        title: "Generador de Contraseñas | Generador y verificador de contraseñas seguras",
+        description:
+            "Generador de Contraseñas para generar y verificar la seguridad de tus contraseñas. Creada con Nextjs y Tailwind CSS.",
+        link: "https://generador-contrasenas-sc.vercel.app/",
+        github: "https://github.com/SamuelCB13/GeneradorContrasenas.git",
+        image: "/proyecto4.webp",
+        tags: [TAGS.NEXTJS, TAGS.TAILWIND, TAGS.TOAST],
     },
 ];
 ---
