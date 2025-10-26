@@ -2,6 +2,17 @@
 import ExperienceItem from "../components/ExperienciaItem.astro";
 const EXPERIENCE = [
     {
+        id: 3,
+        title: "BpoGs & Bavaria",
+        image: "/bpogs-bavaria.png",
+        description:
+            "Responsable de realizar ajustes y mejoras en el aplicativo web de manejo de ruteros de distribución de productos. Implementación de nuevas funcionalidades y optimización del rendimiento del sistema.",
+        date: "Octubre 2025 | Freelance",
+        cargo: "Prestación de Servicios",
+        privacy: "Privado",
+        link: "https://www.bpogs.com",
+    },
+    {
         id: 2,
         title: "BPO Global Services",
         image: "/logo-bpo.png",
@@ -64,11 +75,17 @@ const EXPERIENCE = [
     }
 
     main {
-        animation: slideUp .5s ease-out;
+        animation: slideUp 0.5s ease-out;
     }
 
     @keyframes slideUp {
-        from { opacity: 0; transform: translateY(40px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 </style>
