@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import '@fontsource-variable/geist/wght.css';
+@import '@fontsource/fjalla-one';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Geist Variable', sans-serif;
+}
+
+/* Scroll animado al dar clic a un <a> para ir a una sección */
+html {
+    scroll-behavior: smooth;
+}
+
+/* No hacer animación de scroll si el usuario tiene las animaciones desactivadas */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+}

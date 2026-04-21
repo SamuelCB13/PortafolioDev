@@ -25,14 +25,14 @@ import FormIcon from "./icons/Form.astro";
 
         <!-- Contenido principal -->
         <div
-            class="relative flex flex-col md:flex-row items-center justify-center max-w-5xl gap-8 md:gap-10 mt-16 sm:mt-24 md:mt-32 lg:mt-[10rem] w-full"
+            class="relative flex flex-col md:flex-row items-center justify-center max-w-5xl gap-8 md:gap-10 mt-16 sm:mt-24 md:mt-32 lg:mt-40 w-full"
         >
             <!-- Formulario -->
             <section
                 class="w-full bg-zinc-950 border border-zinc-800 p-6 md:p-8 rounded-lg"
             >
                 <h2
-                    class="text-2xl md:text-[30px] text-[#c74343] flex items-center gap-2"
+                    class="text-2xl md:text-[30px] text-[#00c3f2] flex items-center gap-2"
                 >
                     <FormIcon class="size-6" />
                     Información de contacto
@@ -51,23 +51,23 @@ import FormIcon from "./icons/Form.astro";
                         name="nombre"
                         autocomplete="off"
                         placeholder="Nombre Completo"
-                        class="w-full py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg outline-none focus:border-[#c74343] text-white focus:bg-transparent transition duration-200"
+                        class="w-full py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg outline-none focus:border-[#00c3f2] text-white focus:bg-transparent transition duration-200"
                     />
                     <input
                         type="email"
                         name="email"
                         autocomplete="off"
                         placeholder="Correo Electrónico"
-                        class="w-full py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg outline-none focus:border-[#c74343] text-white focus:bg-transparent transition duration-200"
+                        class="w-full py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg outline-none focus:border-[#00c3f2] text-white focus:bg-transparent transition duration-200"
                     />
                     <textarea
                         name="mensaje"
                         placeholder="Escribe tu mensaje..."
-                        class="w-full max-h-44 min-h-44 py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg h-44 outline-none focus:border-[#c74343] text-white focus:bg-transparent transition duration-200"
+                        class="w-full max-h-44 min-h-44 py-3 px-4 border bg-zinc-900 border-zinc-800 rounded-lg h-44 outline-none focus:border-[#00c3f2] text-white focus:bg-transparent transition duration-200"
                     ></textarea>
                     <button
                         type="submit"
-                        class="w-full p-3 bg-[#c74343] text-white rounded-md flex items-center justify-center gap-2 hover:bg-transparent border border-[#c74343] hover:border-white transition duration-200"
+                        class="w-full p-3 bg-[#00c3f2] text-black rounded-md flex items-center justify-center gap-2 hover:bg-transparent border border-[#00c3f2] hover:border-white hover:text-white transition duration-200 cursor-pointer font-semibold"
                     >
                         <SendIcon class="size-6" />
                         Enviar mensaje
@@ -88,7 +88,7 @@ import FormIcon from "./icons/Form.astro";
                         Si deseas contactarme, puedes hacerlo a través de mis
                         redes sociales o enviándome un correo electrónico. Estoy
                         siempre disponible para nuevas oportunidades y
-                        colaboraciones. ❤️
+                        colaboraciones. 🩵
                     </p>
                 </div>
 
@@ -167,15 +167,6 @@ import FormIcon from "./icons/Form.astro";
 </main>
 
 <style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Fjalla One", sans-serif;
-    }
-
     main {
         animation: slideUp 0.5s ease-out;
     }

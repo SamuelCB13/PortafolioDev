@@ -9,10 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
-    "@fontsource-variable/rubik": "^5.1.0",
-    "@fontsource/fjalla-one": "^5.1.0",
-    "astro": "^5.16.9",
-    "tailwindcss": "^3.4.17"
+    "@fontsource-variable/geist": "^5.2.8",
+    "@fontsource/fjalla-one": "^5.2.7",
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^6.1.8",
+    "tailwindcss": "^4.2.4"
   }
 }
